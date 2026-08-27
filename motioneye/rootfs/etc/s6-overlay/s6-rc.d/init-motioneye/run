@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: motionEye
+# Home Assistant Community App: motionEye
 # Creates initial motionEye configuration in case it is non-existing
 # ==============================================================================
 readonly CONF='/data/motioneye/motioneye.conf'

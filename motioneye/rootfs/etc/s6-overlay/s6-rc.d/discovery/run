@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: motionEye
+# Home Assistant Community App: motionEye
 # Send Discovery information to Home Assistant
 # ==============================================================================
 declare config
