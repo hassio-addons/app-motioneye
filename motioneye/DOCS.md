@@ -32,7 +32,8 @@ comparison to installing any other Home Assistant add-on.
 1. Check the logs of the "motionEye" add-on to see if everything went well.
 1. Click the "OPEN WEB UI" button to open the web interface
 1. Login with username "admin", without a password.
-1. Edit your admin account with a secure password!
+1. motionEye prompts you to set a password for both the "admin" and the
+   "surveillance" user. Both are required, pick secure ones!
 
 Home Assistant, by default, ships with the Community Add-ons store installed.
 However, if it is missing (for any reason), you can add it by clicking the

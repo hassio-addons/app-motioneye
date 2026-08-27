@@ -6,6 +6,10 @@
 # ==============================================================================
 readonly CONF='/data/motioneye/motioneye.conf'
 readonly MOTION='/data/motioneye/motion.conf'
+# motionEye ships its helper scripts inside its Python package. Resolve that
+# location at runtime, so the path does not break on a Python version bump.
+MIGRATECONF="$(python3 -c 'import motioneye, pathlib; print(pathlib.Path(motioneye.__file__).parent / "scripts" / "migrateconf.sh")')"
+readonly MIGRATECONF
 declare button_type
 declare camera_number
 declare button_command
@@ -19,13 +23,13 @@ fi
 # Migration
 if bashio::fs.file_exists "${CONF}"; then
     bashio::log.debug "Running startup migrations"
-    /usr/lib/python3.12/site-packages/motioneye/scripts/migrateconf.sh "${CONF}"
+    "${MIGRATECONF}" "${CONF}"
     find /data/motioneye/ \
         -maxdepth 1 \
         -type f \
         -name "thread-*.conf" \
         -exec \
-            /usr/lib/python3.12/site-packages/motioneye/scripts/migrateconf.sh {} \;
+            "${MIGRATECONF}" {} \;
 fi
 
 # Configure motion webcontrol access
