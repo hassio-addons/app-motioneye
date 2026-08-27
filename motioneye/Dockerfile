@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:21.0.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:21.0.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -11,37 +11,37 @@ ARG MOTIONEYE_VERSION="0.43.1"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        autoconf=2.72-r1 \
-        automake=1.17-r1 \
-        build-base=0.5-r3 \
-        curl-dev=8.14.1-r2 \
-        ffmpeg-dev=6.1.2-r2 \
-        gettext-dev=0.24.1-r0 \
-        git=2.49.1-r0 \
+        autoconf=2.73-r0 \
+        automake=1.18.1-r1 \
+        build-base=0.5-r4 \
+        curl-dev=8.21.0-r0 \
+        ffmpeg-dev=8.1.2-r0 \
+        gettext-dev=1.0-r0 \
+        git=2.54.0-r0 \
         jpeg-dev=9f-r0 \
-        libjpeg-turbo-dev=3.1.0-r0 \
-        libmicrohttpd-dev=1.0.1-r1 \
-        libwebp-dev=1.5.0-r0 \
-        linux-headers=6.14.2-r0 \
-        musl-dev=1.2.5-r10 \
-        python3-dev=3.12.12-r0 \
-        v4l-utils-dev=1.28.1-r1 \
+        libjpeg-turbo-dev=3.1.3-r0 \
+        libmicrohttpd-dev=1.0.5-r0 \
+        libwebp-dev=1.6.0-r0 \
+        linux-headers=7.0.0-r1 \
+        musl-dev=1.2.6-r2 \
+        python3-dev=3.14.7-r1 \
+        v4l-utils-dev=1.32.0-r1 \
     \
     && apk add --no-cache \
-        cifs-utils=7.3-r0 \
-        ffmpeg-libs=6.1.2-r2 \
-        ffmpeg=6.1.2-r2 \
-        libintl=0.24.1-r0 \
-        libjpeg-turbo=3.1.0-r0 \
+        cifs-utils=7.5-r0 \
+        ffmpeg-libs=8.1.2-r0 \
+        ffmpeg=8.1.2-r0 \
+        libintl=1.0-r0 \
+        libjpeg-turbo=3.1.3-r0 \
         libjpeg=9f-r0 \
-        libmicrohttpd=1.0.1-r1 \
-        libwebp=1.5.0-r0 \
-        mosquitto-clients=2.0.21-r0 \
-        nginx=1.28.0-r3 \
-        py3-pip=25.1.1-r0 \
-        python3=3.12.12-r0 \
-        rsync=3.4.1-r1 \
-        v4l-utils=1.28.1-r1 \
+        libmicrohttpd=1.0.5-r0 \
+        libwebp=1.6.0-r0 \
+        mosquitto-clients=2.1.2-r1 \
+        nginx=1.30.4-r1 \
+        py3-pip=26.1.2-r0 \
+        python3=3.14.7-r1 \
+        rsync=3.4.3-r1 \
+        v4l-utils=1.32.0-r1 \
     \
     && curl -J -L -o /tmp/motion.tar.gz \
         "https://github.com/Motion-Project/motion/archive/release-${MOTION_VERSION}.tar.gz" \
