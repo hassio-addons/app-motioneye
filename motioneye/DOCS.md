@@ -1,7 +1,8 @@
 # Home Assistant Community App: motionEye
 
 motionEye is a popular frontend to the camera software called motion. This
-app provides both, allowing you to add your camera's to your Hass.io setup.
+app provides both, allowing you to add your cameras to your Home Assistant
+setup.
 
 motionEye is Open Source CCTV and NVR, that is elegant and really easy to use.
 It can be used as a Baby Monitor, Construction Site Montage Viewer,
@@ -12,8 +13,8 @@ Some cool features of motionEye:
 - Support for a ridiculous amount of cameras, including IP cams.
 - Add multiple cameras by hooking up multiple motionEye instances together.
   For example, by using MotionEyeOS on a Pi Zero + Pi camera in your network.
-- Supports uploading recording into Google Drive and Dropbox.
-- motion detection, including email notification and scheduling.
+- Supports uploading recordings to Google Drive and Dropbox.
+- Motion detection, including email notification and scheduling.
 - Can record continuously, motion, or timelapse, with retention settings.
 - Supports "[action buttons][motioneye-wiki-action-buttons]" within the configuration.
 
@@ -37,9 +38,9 @@ comparison to installing any other Home Assistant app.
 
 Home Assistant, by default, ships with the Community Apps store installed.
 However, if it is missing (for any reason), you can add it by clicking the
-button My button below.
+My button below.
 
-[![Add repository to your Home Assitant instance.][repository-badge]][repository]
+[![Add repository to your Home Assistant instance.][repository-badge]][repository]
 
 ## Configuration
 
@@ -161,7 +162,7 @@ You have several options to get them answered:
 - The Home Assistant [Community Forum][forum].
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 
-You could also [open an issue here][issue] GitHub.
+You could also [open an issue here][issue] on GitHub.
 
 ## Authors & contributors
 
@@ -199,7 +200,6 @@ SOFTWARE.
 [contributors]: https://github.com/hassio-addons/app-motioneye/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord]: https://discord.me/hassioaddons
-[dockerhub]: https://hub.docker.com/r/hassioaddons/motioneye
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-motioneye/71826?u=frenck
 [frenck]: https://github.com/frenck
 [issue]: https://github.com/hassio-addons/app-motioneye/issues
