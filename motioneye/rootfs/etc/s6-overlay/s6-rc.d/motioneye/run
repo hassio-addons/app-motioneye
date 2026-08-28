@@ -2,7 +2,7 @@
 # shellcheck shell=bash
 # ==============================================================================
 # Home Assistant Community App: motionEye
-# Runs the motionEye
+# Runs the motionEye daemon
 # ==============================================================================
 declare -a options
 
@@ -15,5 +15,5 @@ if bashio::debug; then
     options+=(-d)
 fi
 
-# Run the motionEye
+# Run the motionEye daemon
 exec meyectl startserver "${options[@]}"
