@@ -7,7 +7,7 @@
 declare config
 
 # Wait for motionEye to start before continuing
-bashio::net.wait_for 28765
+bashio::net.wait_for 28765 127.0.0.1 300
 
 # Create discovery config payload for Home Assistant
 config=$(bashio::var.json \
