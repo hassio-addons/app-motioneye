@@ -28,7 +28,7 @@ RUN \
         v4l-utils-dev=1.32.0-r1 \
     \
     && apk add --no-cache \
-        cifs-utils=7.5-r0 \
+        cifs-utils=7.5-r1 \
         ffmpeg-libs=8.1.2-r0 \
         ffmpeg=8.1.2-r0 \
         libintl=1.0-r0 \
