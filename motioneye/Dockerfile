@@ -37,7 +37,7 @@ RUN \
         libmicrohttpd=1.0.5-r0 \
         libwebp=1.6.0-r0 \
         mosquitto-clients=2.1.2-r1 \
-        nginx=1.30.4-r1 \
+        nginx=1.30.6-r0 \
         py3-pip=26.1.2-r0 \
         python3=3.14.8-r0 \
         rsync=3.5.0-r0 \
