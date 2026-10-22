@@ -23,7 +23,7 @@ RUN \
         libmicrohttpd-dev=1.0.5-r0 \
         libwebp-dev=1.6.0-r0 \
         linux-headers=7.0.0-r1 \
-        musl-dev=1.2.6-r2 \
+        musl-dev=1.2.6-r3 \
         python3-dev=3.14.8-r0 \
         v4l-utils-dev=1.32.0-r1 \
     \
