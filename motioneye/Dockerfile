@@ -30,7 +30,7 @@ RUN \
     && apk add --no-cache \
         cifs-utils=7.5-r1 \
         ffmpeg-libs=8.1.3-r0 \
-        ffmpeg=8.1.2-r0 \
+        ffmpeg=8.1.3-r0 \
         libintl=1.0-r0 \
         libjpeg-turbo=3.1.3-r0 \
         libjpeg=9f-r0 \
