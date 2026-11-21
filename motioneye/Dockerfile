@@ -38,7 +38,7 @@ RUN \
         libwebp=1.6.0-r0 \
         mosquitto-clients=2.1.2-r1 \
         nginx=1.30.6-r0 \
-        py3-pip=26.1.2-r0 \
+        py3-pip=26.1.2-r1 \
         python3=3.14.10-r1 \
         rsync=3.5.2-r1 \
         v4l-utils=1.32.0-r1 \
